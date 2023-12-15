@@ -26,6 +26,16 @@ export default function HomeMenu() {
         <h3 className="font-semibold text-gray-500 uppercase">check out</h3>
         <h2 className="text-4xl italic font-bold text-red-500">Menu</h2>
       </div>
+
+      <div className="grid-cols-3 gap-4">
+        
+      <div className="p-4 text-center bg-gray-400 rounded-lg">
+        <img src="" alt="pizza" />
+        <h4 className="my-2 font-semibold">Pepperoni Pizza</h4>
+        <p className="text-sm text-gray-500">Vim iuvaret delicata accommodare no, eos elit autem ei. Mel putant malorum ut, alii veniam fierent eos ex. Has id probatus salutandi, ut est eruditi sanctus argumentum, pro ut sanctus rationibus. </p>
+      </div>
+      </div>
+
     </section>
   );
 }
