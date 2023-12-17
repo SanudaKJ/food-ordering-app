@@ -33,6 +33,7 @@ export default function HomeMenu() {
         <img src="" alt="pizza" />
         <h4 className="my-2 font-semibold">Pepperoni Pizza</h4>
         <p className="text-sm text-gray-500">Vim iuvaret delicata accommodare no, eos elit autem ei. Mel putant malorum ut, alii veniam fierent eos ex. Has id probatus salutandi, ut est eruditi sanctus argumentum, pro ut sanctus rationibus. </p>
+        <button className="px-4 py-2 text-white bg-red-500 rounded-full"></button>
       </div>
       </div>
 
