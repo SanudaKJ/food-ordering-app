@@ -14,7 +14,9 @@ export default function Hero() {
           delicious joy in life.
         </p>
         <div className="flex gap-4 text-sm ">
-          <button className="flex items-center gap-2 px-4 py-2 text-white uppercase bg-red-500 rounded-full hover:bg-red-600">
+
+          <button className="bg-red-400 items-center text-white px-4 py-5 rounded-full flex gap-2 uppercase">
+ feature/header
             Order now
             <Right />
           </button>
