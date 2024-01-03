@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Menuitem from "../menu/menuitem";
+import Sectionheaders from "./sectionheaders";
 export default function HomeMenu() {
   return (
     <section>
@@ -9,10 +11,9 @@ export default function HomeMenu() {
             alt={"sallad2"}
             width={107}
             height={195}
-            
           />
         </div>
-        <div className="absolute w-48 h-48 text-left -left-12 ">
+        <div className="absolute w-48 h-48 text-left -left-12 -z-10">
           <Image
             src={"/sallad1.png"}
             alt={"sallad2"}
@@ -21,22 +22,21 @@ export default function HomeMenu() {
           />
         </div>
       </div>
-
-      <div className="flex flex-col gap-1 text-center">
-        <h3 className="font-semibold text-gray-500 uppercase">check out</h3>
-        <h2 className="text-4xl italic font-bold text-red-500">Menu</h2>
-      </div>
-
-      <div className="grid-cols-3 gap-4">
+      <div className="flex flex-col gap-2">
         
-      <div className="p-4 text-center bg-gray-400 rounded-lg">
-        <img src="" alt="pizza" />
-        <h4 className="my-2 font-semibold">Pepperoni Pizza</h4>
-        <p className="text-sm text-gray-500">Vim iuvaret delicata accommodare no, eos elit autem ei. Mel putant malorum ut, alii veniam fierent eos ex. Has id probatus salutandi, ut est eruditi sanctus argumentum, pro ut sanctus rationibus. </p>
-        <button className="px-4 py-2 text-white bg-red-500 rounded-full"></button>
-      </div>
+      <div className="flex flex-col gap-1 text-center">
+        <Sectionheaders subHeader={"checkout"} mainHeader={"Menu"}/>
       </div>
 
+      <div className="grid grid-cols-3 gap-4">
+        <Menuitem />
+        <Menuitem />
+        <Menuitem />
+        <Menuitem />
+        <Menuitem />
+        <Menuitem />
+      </div>
+      </div>
     </section>
   );
 }
