@@ -2,7 +2,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <>
-      <header className="flex items-center justify-between">
+      <header className="flex items-center justify-between ">
         <Link className="text-2xl font-semibold text-red-500 " href="">
           {" "}
           ST PIZZA{" "}
