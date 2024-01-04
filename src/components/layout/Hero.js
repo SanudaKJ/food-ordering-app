@@ -3,7 +3,7 @@ import Link from "next/link";
 import Right from "../icons/Right";
 export default function Hero() {
   return (
-    <section className="grid grid-cols-2">
+    <section className="grid grid-cols-2 mt-4">
       <div className="py-8">
         <h1 className="text-4xl font-semibold">
           Everthing is better with a{" "}
@@ -15,7 +15,9 @@ export default function Hero() {
         </p>
         <div className="flex gap-4 text-sm ">
 
-          <button className="bg-red-500 items-center text-white px-4 py-5 rounded-full flex gap-2 uppercase hover:bg-red-600 ">
+
+          <button className="flex items-center gap-2 px-4 py-5 text-white uppercase bg-red-500 rounded-full hover:bg-red-600">
+
             Order now
             <Right />
           </button>
