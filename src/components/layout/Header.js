@@ -9,16 +9,16 @@ export default function Header() {
             ST PIZZA{" "}
           </Link>
           <Link href={"/"}>Home</Link>
-          <Link href={"/"}>Menu</Link>
-          <Link href={"/"}>About</Link>
-          <Link href={"/"}>Contact</Link>
+          <Link href={""}>Menu</Link>
+          <Link href={""}>About</Link>
+          <Link href={""}>Contact</Link>
         </nav>
 
         <nav className="flex items-center gap-4 font-semibold text-gray-500">
-          <Link href="">Register</Link>
+          <Link href={'/Register'}>Register</Link>
           <Link
             className="px-4 py-2 text-white bg-red-500 rounded-full hover:bg-red-600"
-            href={"/"}
+            href={""}
           >
             Login
           </Link>

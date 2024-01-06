@@ -3,7 +3,7 @@ import Link from "next/link";
 import Right from "../icons/Right";
 export default function Hero() {
   return (
-    <section className="grid grid-cols-2 mt-4">
+    <section className="grid grid-cols-2 mt-4 ">
       <div className="py-8">
         <h1 className="text-4xl font-semibold">
           Everthing is better with a{" "}
