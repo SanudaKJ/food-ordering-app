@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Header />
+      
       <Hero />
       <HomeMenu />
       <section className="my-16 text-center">
@@ -46,9 +46,7 @@ export default function Home() {
         </div>
       </section>
       
-      <footer className="pt-8 text-center text-gray-500">
-        &copy;2023 All rights reserved
-      </footer>
+     
     </>
   );
 }
