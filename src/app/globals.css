@@ -11,7 +11,7 @@ input[type="text"] {
 
 button {
   @apply block w-full text-gray-700 font-semibold;
-  @apply py-2 px-6 rounded-xl border border-gray-500;
+  @apply py-2 px-6 rounded-xl border border-gray-300;
 }
 button[type="submit"], .submit{
   @apply bg-red-500 border-0 text-white;
