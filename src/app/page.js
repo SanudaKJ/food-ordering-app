@@ -23,7 +23,7 @@ export default function Home() {
             </p>
             <p>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              eiusmod tempor incididunt ut  magna aliqua. Ut
               enim ad minim veniam, "
             </p>
             <p>

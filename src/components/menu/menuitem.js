@@ -7,7 +7,7 @@ export default function Menuitem() {
             Vim iuvaret delicata accommodare no, eos elit autem ei. Mel putant
             malorum ut, alii veniam fierent eos ex. {" "}
           </p>
-          <button className="px-4 py-2 text-white bg-red-500 rounded-full">Add to cart 12$</button>
+          <button className="px-4 py-2 text-white bg-red-500 rounded-full">Add to Cart 12$</button>
         </div>
     );
     
