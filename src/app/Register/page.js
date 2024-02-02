@@ -1,17 +1,22 @@
 "use client";
+import { set } from "mongoose";
 import Image from "next/image";
 import { useState } from "react";
 
 export default function Register() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  function HandleFormSubit(ev) {
+  const [creatingUser, setCreatingUser] = useState(false);
+  const [userCreated, setUserCreated] = useState(true);
+  async function HandleFormSubit(ev) {
     ev.preventDefault();
-    fetch("/api/register", {
+    setCreatingUser(true);
+    await fetch("/api/register", {
       method: "POST",
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     });
+    setCreatingUser(false);
   }
 
   return (
@@ -23,15 +28,17 @@ export default function Register() {
             type="email"
             placeholder="Email"
             value={email}
+            disabled = {creatingUser}
             onChange={(ev) => setEmail(ev.target.value)}
           />
           <input
             type="password"
             placeholder="Password"
             value={password}
+            disabled = {creatingUser}
             onChange={(ev) => setPassword(ev.target.value)}
           />
-          <button type="submit" className="">
+          <button type="submit" disabled = {creatingUser} >
             Register
           </button>
           <div className="my-4 text-center text-gray-500">
