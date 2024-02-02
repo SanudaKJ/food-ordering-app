@@ -1,13 +1,14 @@
 "use client";
 import { set } from "mongoose";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Register() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [creatingUser, setCreatingUser] = useState(false);
-  const [userCreated, setUserCreated] = useState(true);
+  const [userCreated, setUserCreated] = useState(false);
   async function HandleFormSubit(ev) {
     ev.preventDefault();
     setCreatingUser(true);
@@ -17,28 +18,37 @@ export default function Register() {
       headers: { "Content-Type": "application/json" },
     });
     setCreatingUser(false);
+    setUserCreated(true);
   }
 
   return (
     <>
       <section className="mt-5">
         <h1 className="mb-4 text-4xl text-center text-red-500">Register </h1>
+        {userCreated && (
+          <div className="my-4 text-center">
+            User Created. <br /> Now you can{" "}
+            <Link className="underline" href={"/login"}>
+              Login &raquo;{" "}
+            </Link>
+          </div>
+        )}
         <form className="block max-w-xs mx-auto" onSubmit={HandleFormSubit}>
           <input
             type="email"
             placeholder="Email"
             value={email}
-            disabled = {creatingUser}
+            disabled={creatingUser}
             onChange={(ev) => setEmail(ev.target.value)}
           />
           <input
             type="password"
             placeholder="Password"
             value={password}
-            disabled = {creatingUser}
+            disabled={creatingUser}
             onChange={(ev) => setPassword(ev.target.value)}
           />
-          <button type="submit" disabled = {creatingUser} >
+          <button type="submit" disabled={creatingUser}>
             Register
           </button>
           <div className="my-4 text-center text-gray-500">
