@@ -7,6 +7,4 @@ export async function POST(req) {
 
   return Response.json(createdUser);
 }
-// export function POST(req) {
-//   return Response.json("Ok");
-// }
+
