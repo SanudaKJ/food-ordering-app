@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <Header/>
         {children}
         <footer className="pt-8 text-center text-gray-500">
-        &copy;2023 All rights reserved
+        &copy;2023 All Rights Reserved
       </footer>
         
         </main>

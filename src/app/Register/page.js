@@ -35,7 +35,7 @@ export default function Register() {
         {userCreated && (
           <div className="my-4 text-center">
             User Created. <br /> Now you can{" "}
-            <Link className="underline" href={"/login"}>
+            <Link className="underline" href={"/Login"}>
               Login &raquo;{" "}
             </Link>
           </div>
@@ -71,6 +71,12 @@ export default function Register() {
             <Image src={"/google.png"} width={25} height={25} alt="google" />
             Login with Google
           </button>
+          <div className="pt-4 my-4 text-center text-gray-500 border-t">
+            Existing Account?{" "}
+            <Link className="underline" href={"/Login"}>
+              Login Here &raquo;{" "}
+            </Link>
+          </div>
         </form>
       </section>
     </>
