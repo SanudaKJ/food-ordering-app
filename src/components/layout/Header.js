@@ -15,10 +15,10 @@ export default function Header() {
         </nav>
 
         <nav className="flex items-center gap-4 font-semibold text-gray-500">
-          <Link href={'/Register'}>Register</Link>
+          <Link href={"/Register"}>Register</Link>
           <Link
             className="px-4 py-2 text-white bg-red-500 rounded-full hover:bg-red-600"
-            href={""}
+            href={"/Login"}
           >
             Login
           </Link>
